@@ -8,5 +8,5 @@ else
 fi
 cd /UrlShortner-AutoFilter-Bot
 pip3 install -U -r requirements.txt
-echo "Starting Lucifer...."
+echo "Starting TargetX...."
 gunicorn app:app & python3 bot.py
