@@ -6,7 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /UrlShortner-AutoFilter-Bot
-WORKDIR /UrlShortner-AutoFilter-Bot
+RUN mkdir /revive_autoheaven
+WORKDIR /revive_autoheaven
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
