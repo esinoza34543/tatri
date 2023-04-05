@@ -9,4 +9,4 @@ fi
 cd /UrlShortner-AutoFilter-Bot
 pip3 install -U -r requirements.txt
 echo "Starting Lucifer...."
-python3 bot.py
+gunicorn app:app & python3 bot.py
