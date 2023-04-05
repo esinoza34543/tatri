@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '7433052') )
-API_HASH = environ.get('API_HASH', '1b2bccffd1fd3570a39a8bcf7581f28b')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5264501642:AAFbBDtISYSZNYSjjvck9xMTS6E8j82xUq0')
+API_ID = int(environ.get('API_ID', '9021318') )
+API_HASH = environ.get('API_HASH', '5f59092c3ed13eeb338bb0322e1d112f')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5264501642:AAGadohYdvY3i7LG1ml4De1vzYiMFUDMMmg')
 
 # Bot settings
 PORT = environ.get("PORT", "8080")
@@ -29,11 +29,11 @@ NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/3bed35ee47a26f935a170.jp
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '890230886 1154404230 1921088773 1612173220 1120465309 1268492137 930859384 1994336709').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001511276789 -1001229061949 -1001534801897').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001444805977').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', '-1001534801897')
-auth_grp = environ.get('AUTH_GROUPS', '-1001666451591 -1001371981764 -1001885752842 -1001573188040')
+auth_grp = environ.get('AUTH_GROUPS', '-1001573188040')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 FILDLT_CNL = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('FILDLT_CNL', '0').split()]
@@ -50,7 +50,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Heavens Chat')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001246851402'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001503730806'))
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/HeavenForYouAll/7878')
 
 # Log Channels
