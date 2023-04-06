@@ -6,5 +6,5 @@ def hello_world():
     return 'Working fine bruh!'
 
 
-if __name__ == "__LUCIFIER__":
+if __name__ == "__LUCIFER__":
     app.run()
