@@ -10,5 +10,4 @@ RUN mkdir /revive_autoheaven
 WORKDIR /revive_autoheaven
 COPY start.sh /start.sh
 RUN cd /revive_autoheaven
-RUN pip3 install -U -r requirements.txt
 CMD gunicorn app:app & python3 bot.py
